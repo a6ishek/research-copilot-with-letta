@@ -15,8 +15,6 @@ Decoupled Architecture: A professionally structured project with a decoupled bac
 🧠 Architectural Overview
 The project is built on a modern, decoupled architecture with a clear division of responsibilities.
 
-![Uploading Letta_MemGPT.drawio.png…]()
-
 
 Execution Flow: A User's Journey Through the System
 User Query: The user enters a question in the Streamlit UI.
