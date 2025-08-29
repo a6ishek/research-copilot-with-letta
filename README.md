@@ -15,7 +15,6 @@ Decoupled Architecture: A professionally structured project with a decoupled bac
 🧠 Architectural Overview
 The project is built on a modern, decoupled architecture with a clear division of responsibilities.
 
-
 Execution Flow: A User's Journey Through the System
 User Query: The user enters a question in the Streamlit UI.
 
@@ -28,17 +27,6 @@ Context Augmentation: The memory_manager combines the retrieved documents with t
 Agentic Generation: The letta_adapter sends this comprehensive prompt to the live Letta agent API. The agent processes the information, applies its reasoning, and generates a final response.
 
 Response & Memory Update: The final response is returned from the Letta API, passed back to the main.py API, which updates the agent's short-term memory and returns the answer to the Streamlit frontend.
-
-📸 Output Screenshots
-
-1. Main UI
-Screenshot of the Streamlit UI with the input field and "Ask" button.
-
-2. Answer with Context
-Screenshot showing a question, the final answer, and the retrieved context used to generate the answer.
-
-3. Memory Interaction
-Screenshot demonstrating how the agent remembers a past detail from the conversation.
 
 🛠️ Getting Started
 Prerequisites
