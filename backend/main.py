@@ -10,7 +10,7 @@ from backend.letta_adapter import LettaClient
 app = FastAPI(title="Research Copilot API")
 
 # Initialize Letta Client and Agent ID globally
-AGENT_ID = "agent-6678aad4-8e86-4370-9255-34ad0e77d530"
+AGENT_ID = "agentid"
 letta_client = LettaClient()
 
 # Initialize the research agent
