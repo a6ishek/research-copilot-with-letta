@@ -1,4 +1,4 @@
-# research-copilot-with-letta
+# Research-copilot-with-letta
 🔬 Research Copilot: An Agentic RAG System with Letta
 
 This project is a sophisticated Research Copilot that combines a cutting-edge Retrieval-Augmented Generation (RAG) architecture with Letta's stateful AI agents. This application showcases the principles of building an intelligent, memory-aware agent that answers questions based on a provided knowledge base and its own conversational history.
@@ -15,21 +15,8 @@ Decoupled Architecture: A professionally structured project with a decoupled bac
 🧠 Architectural Overview
 The project is built on a modern, decoupled architecture with a clear division of responsibilities.
 
-+------------+        +---------------+        +------------------+
-| Streamlit  | -----> | FastAPI API   | -----> | RAG Manager      |
-| (Frontend) |        | (Backend)     |        | (Librarian)      |
-+------------+        +---------------+        +------------------+
-    ^    |           |                  |      |
-    |    |           v                  v      |
-    |    +-------+ Memory Manager     Letta Adapter +------+
-    |    (History)| (Short-Term)       (Communicator) |      |
-    |             |                                |      |
-    +-------------+--------------------------------+      |
-                                                         v
-                                                  +----------------+
-                                                  | Letta Agent    |
-                                                  | (The Expert)   |
-                                                  +----------------+
+![Uploading Letta_MemGPT.drawio.png…]()
+
 
 Execution Flow: A User's Journey Through the System
 User Query: The user enters a question in the Streamlit UI.
