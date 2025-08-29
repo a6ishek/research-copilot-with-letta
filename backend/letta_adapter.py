@@ -4,7 +4,7 @@ import json
 import os
 
 class LettaClient:
-    def __init__(self, api_key=os.getenv("LETTA_API_KEY", "sk-let-YjIwMDM2OGUtM2JjOC00YjRkLWE4MGUtZTgzNTEyMDJlN2UzOjQyYTUzYzdlLWVjZTgtNDMxMS1hM2I5LWNiNjNhMzIyZDc0ZA==")):
+    def __init__(self, api_key=os.getenv("LETTA_API_KEY", "sk-----==")):
         self.api_key = api_key
         # The base URL is now "https://api.letta.com/v1"
         self.base_url = "https://api.letta.com/v1"
@@ -14,7 +14,7 @@ class LettaClient:
         Sends a message to a specific Letta agent.
         """
         # Correct URL using the agent_id
-        url = f"{self.base_url}/agents/agent-6678aad4-8e86-4370-9255-34ad0e77d530/messages"
+        url = f"{self.base_url}/agents/{agentid}/messages"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
